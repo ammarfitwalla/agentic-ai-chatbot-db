@@ -155,7 +155,7 @@ class QueryEngine:
             })
             answer = response["messages"][-1].content
 
-            print(f"✅ Answer: {answer[:200]}")
+            # print(f"✅ Answer: {answer[:200]}")
 
             # Store in rolling history window
             self._history.append((question, answer))
